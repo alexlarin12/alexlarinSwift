@@ -60,11 +60,9 @@ class Car{
     func unwearSeatBelt(){
         self.seatBeltState = .unwear
     }
-    
 }
 // SportCar - наследник Car
 class SportCar: Car {
-   
     var maxSpeed: Double
     var turbineState: TurbineState
     init(year: Int, fuelCapacity: Double, alarm: Bool, engineState: EngineState,windowsState: WindowsState,seatBeltState: SeatBeltState, maxSpeed:Double, turbineState:TurbineState) {
@@ -83,14 +81,10 @@ class SportCar: Car {
     override func stopEngine() {
         super.stopEngine()
         print("Теперь можно отстегнуть ремни безопасности")
-       
     }
-    
-    
 }
 // TrunkCar - наследник Car
 class TrunkCar: Car {
-   
     var loadUnload:LoadUnload
     let carrying:Double
     var cargoWeight: Double
